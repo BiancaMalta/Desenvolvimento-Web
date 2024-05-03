@@ -1,10 +1,8 @@
 # Meus Sites Favoritos
 
-
+### Descrição
 
 <img  align="right" src= "resultadofinal.gif">
-
-### Descrição
 
 Durante o desenrolar da atividade, optei por aprofundar meus conhecimentos e explorar a implementação de um carrossel para exibir os sites favoritos de forma mais dinâmica e interativa. Em busca de facilitar o desenvolvimento e garantir uma aparência consistente e moderna, empreguei o framework Bootstrap, que fornece uma ampla gama de componentes e estilos pré-definidos. 
 
