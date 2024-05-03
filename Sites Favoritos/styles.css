@@ -1,0 +1,75 @@
+   /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../static/background.svg');
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    margin: auto 8%; 
+    overflow: hidden; 
+    background-color: #e0e0e0;
+    margin-top: 25%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+}
+
+.panel {
+    width: 100%;
+    box-sizing: border-box;
+    display: none; 
+}
+
+.panel:first-child {
+    display: flex; 
+}
+
+.content {
+    padding: 20px;
+    text-align: center; 
+}
+
+.panel img {
+    width: 100%; 
+    height: auto; 
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 24px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+/* Estilos para o rodapé */
+footer {
+    background-color: #6D7C94; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+}
