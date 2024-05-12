@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box; 
+    margin: 0px auto 0px;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-light{
+    background: #0a0909 !important;
+}
+body {
+    font-family: 'Smooth Loving', cursive;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #0a0909 20%, #ffffff 80%);
+
+}
+
+h1, h2 {
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+    color: #ffffffc2;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.gallery .column {
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+
+.gallery img.loaded {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .gallery .column {
+        width: 19%;
+    }
+
+    .gallery img {
+        position: relative; 
+        top: 0;
+        left: 0;
+    }
+}
