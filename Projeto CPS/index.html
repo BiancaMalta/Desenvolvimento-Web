@@ -10,27 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>GEEAD – Técnico em Desenvolvimento de Sistemas</title>
     <style>
+        .mySlides {
+            display: none;
+        }
+
         #main {
             margin-left: 120px
         }
-        .docente-img {
-            width:350px;   
-        }   
-        @media (max-width: 998px) {
-            .docente-img {
-                width: 300px; 
-            }
-            
-        }
-        @media (max-width: 810px) {
-            .w3-half {
-                width: 100%;
-            }
-            .docente-img {
-                width: 100%; 
-            }
-            
-        }
+        
         .w3-row-padding img {
             margin-bottom: 12px
         }
@@ -73,7 +60,7 @@
             <p>SOBRE</p>
         </a>
         <!-- Grade Curricular -->
-        <a href="#gradeC" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+        <a href="#grade" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
             <i class="fa fa-columns w3-xxlarge"></i>
             <p>Grade Curricular</p>
         </a>
@@ -158,7 +145,7 @@
         <!-- Sobre -->
 
         <!-- Grade Curricular -->
-        <div class=" w3-content w3-padding-64" id="gradeC">
+        <div class=" w3-content w3-padding-64" id="grade">
             <h2 class="w3-text-cyan">Grade Curricular</h2>
             <hr style="width:200px" class="w3-opacity">
 
@@ -223,64 +210,71 @@
         <!-- Grade Curricular -->
 
         <!-- Docentes -->
-        <div class="w3-content w3-padding-64" id="docentes">
+        <div class= "w3-content w3-margin-top" id="docentes">
             <h2 class="w3-text-cyan">Docentes</h2>
             <hr style="width:200px" class="w3-opacity">
-            <div class="w3-row w3-row-padding w3-margin-top">
-                <!-- Docente 1 -->
-                <div class="w3-half">
-                    <div class="w3-card w3-round-xlarge">
-                        <img src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?q=80&w=2041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  class="w3-hover-opacity w3-round-xxlarge docente-img" alt="Prof. Ana Pereira">
+        </div>
+        <!-- Carrossel -->   
+        <div class="w3-content w3-display-container" style="max-width:95%">
+            <!-- Docente 1 -->
+            <div class="mySlides">
+                <div class="w3-row w3-padding-16">
+                    <div class="w3-card w3-round-xlarge w3-half w3-padding-32">
+                        <img src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?q=80&w=2041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  class="w3-hover-opacity w3-round-xxlarge" alt="Prof. Ana Pereira" width="88%">
                     </div>
-                </div>
-                <div class="w3-half">
-                    <div class="w3-card w3-round-xlarge docente-info">
+                    <div class="w3-card w3-half w3-round-xlarge">
                         <h3 class="w3-text-cyan">Prof. Ana Pereira</h3>
                         <h4 class="w3-text-cyan">Formação Acadêmica</h4>
                         <p>Graduada em Sistemas de Informação - Fatec (2012)<br>
-                            Mestre em Ciência da Computação - Unicamp (2020)</p>
+                        Mestre em Ciência de Dados - Unicamp (2020)</p>
+                        </p>
                         <h4 class="w3-text-cyan">Experiência Profissional</h4>
-                        <p>Mais de 8 anos na área de banco de dados e ciência de dados.</p>
-                        <hr style="width:200px" class="w3-opacity">
+                        <p>Mais de 8 anos na área de ciência de dados.</p>
                     </div>
                 </div>
-                <!-- Docente 2 -->
-                <div class="w3-half">
-                    <div class="w3-card w3-round-xlarge">
-                        <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w3-hover-opacity w3-round-xxlarge docente-img" alt="Prof. Marcos Oliveira">
-                    </div>
-                </div>
-                <div class="w3-half">
-                    <div class="w3-card w3-round-xlarge docente-info">
+            </div>
+            
+             <!-- Docente 2 -->
+            <div class="mySlides">
+                <div class="w3-row w3-padding-16">
+                    <div class="w3-card w3-round-xlarge w3-half w3-padding-32">
+                        <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w3-hover-opacity w3-round-xxlarge docente-img" alt="Prof. Marcos Oliveira" width="88%">
+                     </div>
+                    <div class="w3-card w3-half w3-round-xlarge">
                         <h3 class="w3-text-cyan">Prof. Marcos Oliveira</h3>
                         <h4 class="w3-text-cyan">Formação Acadêmica</h4>
                         <p>Graduado em Engenharia de Computação - Unesp (2006)<br>
-                            Mestre em Banco de Dados - Unip (2016)</p>
-                        <h4 class="w3-text-cyan ">Experiência Profissional</h4>
+                            Mestre em Desenvolvimento Web  - Unip (2016)</p>
+                        <h4 class="w3-text-cyan">Experiência Profissional</h4>
                         <p>Mais de 10 anos na área de programação web.</p>
-                        <hr style="width:200px" class="w3-opacity">
                     </div>
                 </div>
-
-                <!-- Docente 3 -->
-                <div class="w3-half">
-                    <div class="w3-card w3-round-xlarge">
-                        <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w3-hover-opacity w3-round-xxlarge docente-img" alt="Prof. Carlos Lima">
+            </div>
+           
+            <!-- Docente 3 -->
+            <div class="mySlides">
+                <div class="w3-row w3-padding-16">
+                    <div class="w3-card w3-round-xlarge w3-half w3-padding-32">
+                        <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w3-hover-opacity w3-round-xxlarge docente-img" alt="Prof. Carlos Lima" width="88%">
                     </div>
-                </div>
-                <div class="w3-half">
-                    <div class="w3-card w3-round-xlarge docente-info">
+                    <div class="w3-card w3-half w3-round-xlarge">
                         <h3 class="w3-text-cyan">Prof. Carlos Lima</h3>
                         <h4 class="w3-text-cyan">Formação Acadêmica</h4>
                         <p>Graduado em Sistemas de Informação - USP (2012)<br>
                             Mestre em Cybersecurity - Uninove (2020)</p>
                         <h4 class="w3-text-cyan">Experiência Profissional</h4>
                         <p>Mais de 9 anos na área de Cybersecurity.</p>
-                        <hr style="width:200px" class="w3-opacity">
                     </div>
                 </div>
             </div>
-        </div>               
+        
+            <button class="w3-button w3-cyan w3-display-left botoesDocentes" style="margin-left: -4rem;" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-cyan w3-display-right botoesDocentes" style="margin-right: -4rem;" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+                
+        <div class="w3-center">
+            <p>Para mais informações, acesse nossa <a href="galeria.html" class="w3-hover-cyan" style="text-decoration: none;">Galeria de Docentes!</a></p>
+        </div>
         <!-- Docentes -->
             
         <!-- Mercado de Trabalho -->
@@ -380,6 +374,6 @@
         <!-- Contato -->
 
     </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
